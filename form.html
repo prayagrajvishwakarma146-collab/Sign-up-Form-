@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=>, initial-scale=1.0">
+      <title>Form</title>
+      <style>
+      .a{
+              color:black;
+              size: 200;
+            } 
+            
+            label{
+                  width:180px;
+                  display:inline-block;
+            }
+            input{
+                  margin-top:10px;
+                  color:black;
+            }
+            form{
+                  background-color:whitesmoke;
+            }
+      </style>
+</head>
+
+<body>
+      <!-- <h1 align="center"> Sign Up</h1><hr> -->
+      <form>
+            <fieldset width="10px">
+                  <legend>Sign up </legend>
+            <label class="a"> Enter your Name:</label>
+            <input type="text" placeholder="First name - Last name"required><br><br>
+
+            <label class="a">Enter your contact No. :</label>
+            <input type="number" placeholder="2222222222"required><br><br>
+
+            <label class="a">Enter Email Id: </label>
+            <input type="email" placeholder="abc@gmail.com"required><br><br>
+
+            <!-- <label >Enter Email Id: </label> -->
+            <label class="a">Select Your Branch: </label>
+       
+             <select>
+                  <option>CSE</option>
+                  <option>ME</option>
+                  <option>EC</option>
+            </select><br><br>
+
+            <label class="a">Enter your Gender:</label>
+            <lable for="male">Male</label>
+            <input name="gender" type="radio" required >
+            <lable for="female">Female</label>
+            <input  name="gender" type="radio"required  >
+            <lable for="other">Other</label>
+            <input  name="gender" type="radio"required  ><br><br>
+
+              <lable class="a"> Upload your Resume: </lable>
+              <input type="file" name="resume"required ><br><br>
+
+              <lable class="a">Price Range:  </lable>
+                  <input type="range" name="price" min="0" max="5"required><br><br>
+
+                  <lable class="a"> Date: </lable>
+                  <input type="date" name="date"required><br><br>
+                   
+                  <p class="a"> Give Feedback :</p>
+                  <!-- <lable> Text Area </lable> -->
+                  <textarea name="text" rows="10" cols="30" ></textarea><br><br>
+
+                  <lable class="a"> Except Terms and Conditions </lable>
+                  <input type="checkbox" name="terms"required><br><br>
+                  
+                  <lable></lable>
+                  <Button >submit</Button>
+            </fieldset>
+      </form>
+</body>
+
+</html>
